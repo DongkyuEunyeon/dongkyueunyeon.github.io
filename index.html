@@ -32,6 +32,17 @@
             line-height: 2.2;
             word-break: keep-all;
         }
+
+        /* 버튼 호버 효과를 위한 추가 스타일 */
+        .btn-wedding {
+            transition: all 0.4s ease;
+            letter-spacing: 0.05em;
+        }
+        .btn-wedding:hover {
+            background-color: #8b735b;
+            color: white;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 
@@ -72,6 +83,13 @@
             <div class="mt-16 text-stone-500 font-normal">
                 <span class="text-sm">신랑</span> 정동규 &nbsp; <span class="text-sm">신부</span> 이은연 <span
                     class="ml-2 text-xs">올림</span>
+            </div>
+
+            <div class="mt-12">
+                <a href="https://dongkyueunyeon.github.io/wedding-invitation/" 
+                   class="btn-wedding inline-block px-8 py-3 border border-stone-300 text-stone-600 text-sm rounded-full bg-white shadow-sm font-light">
+                    모바일 청첩장 보기
+                </a>
             </div>
         </section>
 
