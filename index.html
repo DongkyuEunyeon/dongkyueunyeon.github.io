@@ -5,35 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정동규 & 이은연 | 우리의 초대</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
     <style>
         body {
             font-family: 'Noto Serif KR', serif;
             background-color: #faf9f6;
             color: #2d2d2d;
             -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
         }
 
         .prose-container {
+            width: 100%;
             max-width: 600px;
             margin: 0 auto;
-            padding: 100px 24px;
+            padding: 68px 24px 48px;
         }
 
         .line {
             width: 1px;
-            height: 40px;
+            height: 30px;
             background-color: #d1d1d1;
-            margin: 40px auto;
+            margin: 28px auto;
         }
 
         .invitation-text {
-            line-height: 2.2;
+            line-height: 2.05;
             word-break: keep-all;
         }
 
-        /* 버튼 호버 효과를 위한 추가 스타일 */
         .btn-wedding {
             transition: all 0.4s ease;
             letter-spacing: 0.05em;
@@ -44,59 +49,185 @@
             color: white;
             transform: translateY(-2px);
         }
+
+        /* PC에서는 전체적인 가독성만 살짝 높이고 여백은 압축 */
+        @media (min-width: 768px) {
+            .prose-container {
+                max-width: 660px;
+                padding: 62px 32px 42px;
+            }
+
+            /* 이름은 기존 크기 유지 */
+
+            header {
+                margin-bottom: 3.5rem !important;
+            }
+
+            header > p:first-child {
+                font-size: 0.7rem !important;
+                margin-bottom: 1.1rem !important;
+            }
+
+            header > p:last-child {
+                font-size: 1rem !important;
+                margin-top: 0.2rem;
+            }
+
+            .line {
+                height: 28px;
+                margin: 26px auto;
+            }
+
+            section {
+                margin-bottom: 4rem !important;
+            }
+
+            section > div:first-child {
+                margin-bottom: 2.5rem !important;
+            }
+
+            section > div:first-child span {
+                font-size: 0.7rem !important;
+                margin-bottom: 0.55rem !important;
+            }
+
+            /* '초대의 글' 제목은 기존 크기 유지 */
+
+            .invitation-text {
+                font-size: 1.15rem !important;
+                line-height: 2.05;
+            }
+
+            .invitation-text p {
+                margin-bottom: 1.1rem !important;
+            }
+
+            section > div:nth-last-child(2) {
+                margin-top: 2.8rem !important;
+                font-size: 1.05rem;
+            }
+
+            section > div:nth-last-child(2) .text-sm {
+                font-size: 0.85rem !important;
+            }
+
+            section > div:last-child {
+                margin-top: 3.2rem !important;
+            }
+
+            .btn-wedding {
+                font-size: 0.95rem !important;
+                padding: 0.7rem 2rem !important;
+            }
+
+            footer {
+                margin-top: 2rem !important;
+                padding-top: 1.5rem !important;
+            }
+
+            footer p:first-child {
+                font-size: 0.75rem !important;
+                margin-bottom: 0.4rem !important;
+            }
+
+            footer p:last-child {
+                font-size: 0.9rem !important;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <div class="prose-container">
+
         <header class="text-center mb-24">
-            <p class="text-[10px] tracking-[0.3em] text-stone-400 uppercase mb-4">The Wedding of</p>
-            <h1 class="text-2xl font-normal mb-6 tracking-widest text-stone-800">정동규 <span
-                    class="text-stone-300 mx-2">|</span> 이은연</h1>
+
+            <p class="text-[10px] tracking-[0.3em] text-stone-400 uppercase mb-4">
+                The Wedding of
+            </p>
+
+            <h1 class="text-2xl font-normal mb-6 tracking-widest text-stone-800">
+                정동규
+                <span class="text-stone-300 mx-2">|</span>
+                이은연
+            </h1>
+
             <p class="text-stone-500 text-sm tracking-tight italic opacity-80">
                 "우리가 사랑함은 그가 먼저 우리를 사랑하셨음이라"
             </p>
+
         </header>
 
         <div class="line"></div>
 
         <section class="mb-32 text-center">
+
             <div class="mb-12">
-                <span class="text-[10px] text-stone-400 tracking-[0.2em] uppercase mb-2 block">A Sincere
-                    Invitation</span>
-                <h2 class="text-xl font-bold text-stone-800 tracking-wider">초대의 글</h2>
+
+                <span class="text-[10px] text-stone-400 tracking-[0.2em] uppercase mb-2 block">
+                    A Sincere Invitation
+                </span>
+
+                <h2 class="text-xl font-bold text-stone-800 tracking-wider">
+                    초대의 글
+                </h2>
+
             </div>
 
             <div class="invitation-text text-stone-700 font-light text-lg tracking-tight">
+
                 <p class="mb-6">
                     오랜 기다림 끝에 주신 소중한 인연
                 </p>
+
                 <p class="mb-6">
                     하나님의 세밀하신 인도하심 속에<br>
                     저희 두 사람이 믿음의 가정을 이루려 합니다.
                 </p>
+
                 <p>
                     곁에서 아껴주신 감사의 마음을 담아 초대합니다.
                 </p>
+
             </div>
 
             <div class="mt-16 text-stone-500 font-normal">
-                <span class="text-sm">신랑</span> 정동규 &nbsp; <span class="text-sm">신부</span> 이은연 <span
-                    class="ml-2 text-xs">올림</span>
+
+                <span class="text-sm">신랑</span>
+                정동규
+                &nbsp;
+                <span class="text-sm">신부</span>
+                이은연
+                <span class="ml-2 text-xs">올림</span>
+
             </div>
 
             <div class="mt-20">
+
                 <a href="https://dongkyueunyeon.github.io/wedding-invitation/"
                     class="btn-wedding inline-block px-8 py-3 border border-stone-300 text-stone-600 text-sm rounded-full bg-white shadow-sm font-light">
+
                     모바일 청첩장 보기
+
                 </a>
+
             </div>
+
         </section>
+
         <footer class="text-center mt-12 pt-10 border-t border-stone-100">
-            <p class="text-stone-400 text-xs tracking-widest uppercase mb-2">2026년 10월</p>
-            <p class="text-stone-400 text-sm">주님 안에서 하나 됨을 기대하며</p>
+
+            <p class="text-stone-400 text-xs tracking-widest uppercase mb-2">
+                2026년 10월
+            </p>
+
+            <p class="text-stone-400 text-sm">
+                주님 안에서 하나 됨을 기대하며
+            </p>
+
         </footer>
+
     </div>
 
 </body>
